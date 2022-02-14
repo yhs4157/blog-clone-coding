@@ -1,0 +1,30 @@
+.block h3 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.Input {
+  font-size: 1rem;
+  border: none;
+  border-bottom: 1px solid;
+
+  padding-bottom: 0.5rem;
+
+  margin-top: 1rem;
+
+  outline: none;
+  width: 100%;
+}
+
+Button {
+  margin-top: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.link {
+  text-decoration: underline;
+}
