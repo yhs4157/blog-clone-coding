@@ -13,8 +13,6 @@ const AuthForm = props => {
     const {type, form, onChange, onSubmit} = props;
     const text = textMap[type]; 
 
-    console.log(form); 
-
     const boxcolor = palette.gray[8];
     const [idcolor, setIdcolor] = useState(palette.gray[5]);
     const [passwordcolor, setPasswordcolor] = useState(palette.gray[5]);
