@@ -3,6 +3,7 @@ import AuthForm from '../../components/auth/AuthForm'
 import {useDispatch, useSelector} from 'react-redux'; 
 import {changeField, initializeForm, register } from '../../modules/auth';
 import {check} from '../../modules/user';
+import {withRouter} from 'react-router-dom'; 
 
 const RegisterForm = () => {
     const dispatch = useDispatch();
@@ -54,8 +55,9 @@ const RegisterForm = () => {
         if(user) {
             console.log('check API 성공');
             console.log(user); 
+            history.push('/'); 
         }
-    }, [user]);
+    }, [history, user]);
 
     return (
         <div>
@@ -69,7 +71,7 @@ const RegisterForm = () => {
     );
 };
 
-export default RegisterForm; 
+export default withRouter(RegisterForm); 
 
 /*
 {
