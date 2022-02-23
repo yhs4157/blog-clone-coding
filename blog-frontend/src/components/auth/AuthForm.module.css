@@ -28,3 +28,10 @@ footer {
 .link {
   text-decoration: underline;
 }
+
+.ErrorMessage {
+  color: red;
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}

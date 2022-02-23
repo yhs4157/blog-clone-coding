@@ -10,7 +10,7 @@ const textMap = {
 };
 
 const AuthForm = props => {
-    const {type, form, onChange, onSubmit} = props;
+    const {type, form, onChange, onSubmit, error} = props;
     const text = textMap[type]; 
 
     const boxcolor = palette.gray[8];
@@ -59,6 +59,7 @@ const AuthForm = props => {
                      value={form.passwordConfirm}
                     />
                 )}
+                {error && <div className={styles.ErrorMessage}> {error} </div>}
                 <Button cyan fullwidth>{text}</Button>
             </form>
             <footer>
